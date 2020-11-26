@@ -4,10 +4,12 @@ console.log("hello world");
 var numeriCasuali = 0;
 var numeri = "";
 var array = [];
-for (var i = 0; i < 5; i++) {
+while (array.length < 5) {
 var numeroGenerato = parseFloat(Math.floor(Math.random() * 100));
-numeri += " " + numeroGenerato.toString();
-array.push(numeroGenerato)
+if (verifica(numeroGenerato, array) != 1) {
+  numeri += " " + numeroGenerato.toString();
+  array.push(numeroGenerato)
+}
 }
 alert("i numeri sono " + numeri)
 // console.log(numeri);
