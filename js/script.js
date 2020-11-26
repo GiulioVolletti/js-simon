@@ -17,7 +17,7 @@ console.log(array);
 
 
 // Dopo 30 secondi l’utente deve inserire, un prompt alla volta, i numeri che ha visto precedentemente.
-var secondiScelti = 5;
+var secondiScelti = 30;
 var numeriUtente ;
 setTimeout(numeriDaInserire, secondiScelti * 1000)
 
